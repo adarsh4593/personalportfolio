@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-gray-200 font-sans">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full flex justify-between items-center p-5 bg-black shadow-lg transition">
+        <h1 class="text-2xl font-bold text-green-400">Adarsh</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-green-400">About</a></li>
+            <li><a href="#projects" class="hover:text-green-400">Projects</a></li>
+            <li><a href="#services" class="hover:text-green-400">Services</a></li>
+            <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-5">
+        <h2 class="text-4xl font-bold text-green-400">Hi, I'm Adarsh</h2>
+        <p class="text-xl mt-3">A Passionate Web Developer</p>
+        <a href="#projects" class="mt-5 bg-green-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-green-500 transition">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-5 text-center">
+        <h2 class="text-3xl font-bold text-green-400">About Me</h2>
+        <p class="mt-4 max-w-2xl mx-auto">
+            I'm a web developer specializing in modern, fast, and responsive web applications.
+            I have experience with HTML, CSS, JavaScript, React, and more!
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-5 text-center">
+        <h2 class="text-3xl font-bold text-green-400">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 max-w-5xl mx-auto">
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">Portfolio Website</h3>
+                <p>A personal portfolio to showcase my work.</p>
+                <a href="#" class="text-green-400 hover:underline">View Project</a>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold">Educational Website</h3>
+                <p>Engaging lessons for lifelog learning.</p>
+                <a href="https://adarsh4593.github.io/bio-study/" class="text-green-400 hover:underline">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-5 text-center">
+        <h2 class="text-3xl font-bold text-green-400">Services</h2>
+        <p class="mt-4">I offer the following services:</p>
+        <ul class="mt-4 space-y-3">
+            <li>✅ Frontend Development</li>
+            <li>✅ Responsive Web Design</li>
+            <li>✅ Performance Optimization</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-5 text-center">
+        <h2 class="text-3xl font-bold text-green-400">Contact Me</h2>
+        <p class="mt-4">Let's work together! Send me a message below.</p>
+
+        <form id="contact-form" class="mt-6 max-w-md mx-auto">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded-lg bg-gray-800 text-gray-200 border border-green-400 mb-3">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded-lg bg-gray-800 text-gray-200 border border-green-400 mb-3">
+            <textarea name="message" placeholder="Your Message" required class="w-full p-2 rounded-lg bg-gray-800 text-gray-200 border border-green-400 mb-3"></textarea>
+            <button type="submit" class="w-full bg-green-400 text-black p-2 rounded-lg hover:bg-green-500 transition">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
